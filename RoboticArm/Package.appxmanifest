@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="33f47f82-0b0f-4c9c-9977-ece12fb85001" Publisher="CN=Lewis" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>RoboticArm</DisplayName>
+    <PublisherDisplayName>Lewis</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="RoboticArm.App">
+      <m2:VisualElements DisplayName="RoboticArm" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="RoboticArm" ForegroundText="light" BackgroundColor="#464646">
+        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <DeviceCapability Name="webcam" />
+    <DeviceCapability Name="microphone" />
+    <!--When the device's classId is FF * *, there is a predefined name for the class. You can use the name instead of the class id. 
+          There are also other predefined names that correspond to a classId.-->
+    <m2:DeviceCapability Name="usb">
+      <m2:Device Id="vidpid:1267 0000">
+        <m2:Function Type="classId:ff 00 00" />
+      </m2:Device>
+    </m2:DeviceCapability>
+  </Capabilities>
+</Package>
