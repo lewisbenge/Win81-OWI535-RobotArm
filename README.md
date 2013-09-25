@@ -1,5 +1,5 @@
-Win81-OWI535-RobotArm
-=====================
+Windows 8.1 "modern app" demo using the OWI-525 robotic arm
+===========================================================
 
 A sample app that demonstrates Windows 8.1 "modern app" connecteing to the OWI-535 robotic arm. Leverages WinUSB via the new WinRT APIs Windows.Devices.USB.
 
